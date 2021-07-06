@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encode&Decode - تشفير النصوص</title>
+     <style>
+         .title1{
+             
+             color:white;
+             width: 50%;
+             height: 40px;
+             font-size: 24px;
+             background: #1266f1;
+             text-align: center;
+             margin-top: 10px;
+             margin-bottom: 6px;
+             border-radius: 8px 12px;
+            
+         }
+         .title2{
+             
+             color:white;
+             width: 50%;
+             height: 40px;
+             font-size: 24px;
+             background: #1266f1;
+             text-align: center;
+             margin-top: 10px;
+             margin-bottom: -6px;
+             border-radius: 8px 12px;
+             transform: translateX(-98%);
+         }
+         .textarea1{
+             border: 2px solid black;
+             width: 50%;
+             height: 200px;
+             border-radius: 8px 12px;
+             margin-top: 10px;
+             outline: none;
+        
+         }
+         .textarea2{
+             border: 2px solid black;
+             width: 50%;
+             height: 200px;
+             border-radius: 8px 12px;
+             margin-top: 10px;
+             outline: none;
+             transform: translateX(-98%);
+         }
+         select{
+           padding-right: 20px;
+            color: white;
+             width: 50%;
+             height: 30px;
+             background: black;
+             border-radius: 8px 12px;
+             border: 1px solid black;
+             font-weight: bold;
+             
+         }
+         
+         option{
+           color: black;
+             font-weight: bold;
+             margin-bottom: 16px;
+             background: white;
+         }
+         
+         
+         
+         body{
+           background-image: url("Encoding.jpg");
+           background-repeat: no-repeat;
+            background-position:0px 0px;
+            background-size: cover;
+         }
+         
+     </style>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+<link rel="icon" href="icon1.png">
+</head>
+<body dir="rtl">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container">
+    <h2 class="font-italic">
+      تشفير وفك شيفرة النصوص
+    </h2>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarButtonsExample"
+      aria-controls="navbarButtonsExample"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarButtonsExample" style="display: flex; justify-content: flex-end;">
+
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-link px-3 me-2 font-weight-bold font-italic">
+          تسجيل الدخول
+        </button>
+        <button type="button" class="btn btn-primary me-3 font-weight-bold font-italic" style="margin-left: 20px;">
+          قم بالتسجيل مجانا
+        </button>
+        <a
+          class="btn btn-dark px-3"
+          href="#"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+   
+  <main>
+   <div class="title1 font-italic">النص - text</div>
+   <select id="select">
+       <option value="encoding">تشفير النص</option>
+       <option value="decoding">فك شيفرة النصوص</option>
+   </select>
+   <textarea id="text" class="textarea1"></textarea>
+   
+   <div class="title2 font-italic">النتيجة - outcome</div>
+   <textarea id="outcome" class="textarea2"></textarea>   
+  </main>
+ <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
+<script src="code.js"></script>   
+</body>
+</html>
